@@ -1,0 +1,41 @@
+
+/* style.css — シンプルなスタイル */
+:root{--bg:#f7f7fb;--card:#fff;--accent:#5b21b6;--muted:#6b7280}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,'Hiragino Kaku Gothic ProN',Meiryo,sans-serif;background:var(--bg);color:#111}
+.container{max-width:1000px;margin:0 auto;padding:28px}
+.site-header{background:var(--card);border-bottom:1px solid #e6e6ee}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:700;font-size:18px;color:var(--accent)}
+.nav a{margin-left:16px;text-decoration:none;color:var(--muted)}
+
+.hero{display:flex;gap:24px;align-items:center;padding:40px 0}
+.hero-text{flex:1}
+.hero-image{flex:1}
+.hero h1{font-size:28px;margin:0 0 12px}
+.hero p{color:var(--muted);margin:0 0 18px}
+.actions .btn{display:inline-block;padding:10px 16px;border-radius:10px;text-decoration:none;border:1px solid #ddd;margin-right:10px}
+.btn.primary{background:var(--accent);color:#fff;border:0}
+
+.card{background:var(--card);border-radius:12px;padding:12px;box-shadow:0 6px 20px rgba(10,10,20,0.05);border:1px solid #eef0f6}
+.card-title{font-size:14px;color:var(--muted);margin-bottom:8px}
+.card-body{height:300px;display:flex;flex-direction:column;align-items:stretch}
+.card-body iframe{flex:1;border:0;border-radius:8px;min-height:180px}
+
+.features{padding:20px 0}
+.features h2{margin-top:0}
+.features ul{padding-left:18px;color:var(--muted)}
+
+.contact{padding:20px 0;background:transparent}
+.contact form{display:grid;gap:12px}
+.contact label{display:block;font-size:14px}
+.contact input,.contact textarea{width:100%;padding:10px;border:1px solid #ddd;border-radius:8px}
+.form-actions{display:flex;gap:8px;align-items:center}
+
+.site-footer{padding:18px 0;text-align:center;color:var(--muted);border-top:1px solid #eaeaf5;background:var(--card)}
+
+/* Responsive */
+@media(max-width:800px){
+  .hero{flex-direction:column}
+  .nav{display:none}
+}

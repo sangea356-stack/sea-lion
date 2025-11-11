@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NewPage</title>
+  <meta name="description" content="NewPage — シンプルでモダンなランディングページ（日本語）" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">NewPage</div>
+      <nav class="nav">
+        <a href="#features">特徴</a>
+        <a href="#preview">プレビュー</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>新しいウェブページへようこそ</h1>
+        <p>シンプルでレスポンシブな最小限デザイン。すぐに GitHub Pages に公開できます。</p>
+        <div class="actions">
+          <a href="#preview" class="btn primary">プレビューを見る</a>
+          <a href="#contact" class="btn">お問い合わせ</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="card">
+          <div class="card-title">埋め込みプレビュー</div>
+          <div class="card-body">
+            <!-- リモートサイトによっては iframe 表示がブロックされることがあります -->
+            <iframe src="https://chat.ssrchat.com/service/grid5s" title="preview" sandbox="" loading="lazy"></iframe>
+            <p class="note">※ 外部サイトが X-Frame-Options を設定している場合、ここに表示されないことがあります。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="container features">
+      <h2>特徴</h2>
+      <ul>
+        <li>モバイル対応（レスポンシブ）</li>
+        <li>シンプルで読みやすいデザイン</li>
+        <li>静的 HTML（GitHub Pages に簡単デプロイ）</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>お問い合わせ</h2>
+      <p>下のフォームはデモ用です（サーバー送信は行いません）。</p>
+      <form onsubmit="alert('デモ送信：実際の送信は行われません。'); return false;">
+        <label>お名前
+          <input type="text" name="name" placeholder="お名前" required>
+        </label>
+        <label>メール
+          <input type="email" name="email" placeholder="メールアドレス" required>
+        </label>
+        <label>メッセージ
+          <textarea name="message" placeholder="ご要望やメッセージ"></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn primary">送信（デモ）</button>
+          <button type="reset" class="btn">リセット</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© 2025 NewPage</div>
+      <div class="small">GitHub Pages にデプロイするには README の手順をご覧ください。</div>
+    </div>
+  </footer>
+
+</body>
+</html>
